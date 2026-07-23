@@ -417,7 +417,7 @@ github-project
 
 
 
-# Power BI Dashboard
+ Power BI Dashboard
 
 After completing the SQL analysis, the cleaned and structured data was connected to Power BI to build an interactive Business Intelligence dashboard. The objective was to convert SQL insights into visually appealing dashboards that allow business users to monitor KPIs, identify trends, and make data-driven decisions without writing SQL queries.
 
@@ -433,8 +433,7 @@ The Power BI report consists of six dashboard pages:
 6. Customer Churn Analysis Dashboard
 
 ---
-
-# Power BI Workflow
+ Power BI Workflow
 
 ## Step 1: Connect Power BI with MySQL
 
@@ -454,7 +453,7 @@ Imported Tables
 
 ---
 
-## Step 2: Data Transformation
+ Step 2: Data Transformation
 
 Power Query was used to verify and prepare the imported data.
 
@@ -468,7 +467,7 @@ Tasks performed:
 
 ---
 
-## Step 3: Data Modeling
+ Step 3: Data Modeling
 
 Relationships were created between the tables.
 
@@ -491,7 +490,7 @@ This star schema improves report performance and simplifies DAX calculations.
 
 ---
 
-## Step 4: Date Table
+ Step 4: Date Table
 
 A Calendar table was created to support time-based analysis.
 
@@ -505,7 +504,7 @@ Used for:
 
 ---
 
-## Step 5: DAX Measures
+ Step 5: DAX Measures
 
 Several DAX measures were created to calculate KPIs and business metrics.
 
@@ -556,9 +555,9 @@ Customer Churn KPIs
 
 ---
 
-# Dashboard Pages
+ Dashboard Pages
 
-## 1. Executive Dashboard
+ 1. Executive Dashboard
 
 Purpose
 
@@ -584,7 +583,7 @@ KPIs
 
 ---
 
-## 2. Customer Analysis Dashboard
+ 2. Customer Analysis Dashboard
 
 Business Questions
 
@@ -602,7 +601,7 @@ Visuals Used
 
 ---
 
-## 3. Restaurant Performance Dashboard
+ 3. Restaurant Performance Dashboard
 
 Business Questions
 
@@ -620,7 +619,7 @@ Visuals Used
 
 ---
 
-## 4. Coupon Analysis Dashboard
+ 4. Coupon Analysis Dashboard
 
 Business Questions
 
@@ -637,7 +636,7 @@ Visuals Used
 
 ---
 
-## 5. Cancellation & Refund Dashboard
+5. Cancellation & Refund Dashboard
 
 Business Questions
 
@@ -653,7 +652,7 @@ Visuals Used
 
 ---
 
-## 6. Customer Churn Dashboard
+ 6. Customer Churn Dashboard
 
 Business Questions
 
@@ -671,7 +670,7 @@ Visuals Used
 
 ---
 
-# Power BI Features
+ Power BI Features
 
 - Interactive Dashboard
 - Cross Filtering
@@ -686,7 +685,7 @@ Visuals Used
 
 ---
 
-# DAX Concepts Used
+ DAX Concepts Used
 
 - SUM()
 - COUNT()
@@ -704,7 +703,7 @@ Visuals Used
 
 ---
 
-# Power BI Skills Demonstrated
+ Power BI Skills Demonstrated
 
 - Data Import
 - Data Modeling
@@ -719,7 +718,7 @@ Visuals Used
 
 ---
 
-# Tools Used
+ Tools Used
 
 - MySQL
 - MySQL Workbench
@@ -731,7 +730,7 @@ Visuals Used
 
 ---
 
-# Business Outcome
+ Business Outcome
 
 The Power BI dashboards transformed raw SQL outputs into interactive business reports that help stakeholders monitor revenue, customer behavior, restaurant performance, coupon effectiveness, cancellations, refunds, and customer churn in real time.
 
