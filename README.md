@@ -393,7 +393,7 @@ An end-to-end SQL analytics project that investigates Zomato's customer, restaur
 
 # Topics
 
-```text
+text
 sql
 mysql
 mysql-workbench
