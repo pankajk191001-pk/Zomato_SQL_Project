@@ -417,197 +417,322 @@ github-project
 
 
 
-Zomato Business Analytics Project (SQL + Power BI)
-📌 Project Overview
+# Power BI Dashboard
 
-This project analyzes Zomato food delivery data using MySQL and Power BI.
+After completing the SQL analysis, the cleaned and structured data was connected to Power BI to build an interactive Business Intelligence dashboard. The objective was to convert SQL insights into visually appealing dashboards that allow business users to monitor KPIs, identify trends, and make data-driven decisions without writing SQL queries.
 
-The objective is to transform raw transactional data into meaningful business insights by answering real-world business questions related to:
+## Dashboard Overview
 
-Revenue
-Customers
-Restaurants
-Coupons
-Cancellations
-Refunds
-Customer Churn
-🛠 Tools Used
-MySQL Workbench
-Power BI Desktop
-SQL
-DAX
-Power Query
-Dataset
+The Power BI report consists of six dashboard pages:
 
-Three datasets were used.
+1. Executive Dashboard
+2. Customer Analysis Dashboard
+3. Restaurant Performance Dashboard
+4. Coupon Analysis Dashboard
+5. Cancellation & Refund Analysis Dashboard
+6. Customer Churn Analysis Dashboard
 
-Customers
+---
 
-Contains customer details.
+# Power BI Workflow
 
-Orders
+## Step 1: Connect Power BI with MySQL
 
-Contains all order transactions.
+The MySQL database created during the SQL phase was connected directly to Power BI.
 
-Restaurants
+Connection Details
 
-Contains restaurant information.
+- Server: localhost
+- Database: zomato_project
+- Authentication: MySQL Database Authentication
 
-Database Design
+Imported Tables
 
-Three tables were connected.
+- customers
+- orders
+- restaurants
 
-Customers
-     │
-customer_id
-     │
-Orders
-     │
-restaurant_id
-     │
-Restaurants
+---
 
-Relationships were created inside Power BI.
+## Step 2: Data Transformation
 
-SQL Work
+Power Query was used to verify and prepare the imported data.
 
-The SQL phase included
+Tasks performed:
 
-Database creation
-Table creation
-Importing CSV files
-Data cleaning
-Business SQL queries
-Revenue Analysis
-Customer Analysis
-Restaurant Analysis
-Coupon Analysis
-Cancellation Analysis
-Churn Analysis
-Power BI Process
+- Checked data types
+- Removed unnecessary columns
+- Validated null values
+- Renamed columns where required
+- Verified relationships
 
-The project followed these steps.
+---
 
-Step 1
+## Step 3: Data Modeling
 
-Connected Power BI with MySQL.
+Relationships were created between the tables.
 
-Step 2
+customers(customer_id)
+        │
+        ▼
+orders(customer_id)
 
-Loaded all tables.
+restaurants(restaurant_id)
+        │
+        ▼
+orders(restaurant_id)
 
-Step 3
+Relationship Type
 
-Created relationships.
+- One-to-Many
+- Single Direction Filtering
 
-Step 4
+This star schema improves report performance and simplifies DAX calculations.
 
-Performed data cleaning using Power Query.
+---
 
-Step 5
+## Step 4: Date Table
 
-Created calculated measures using DAX.
+A Calendar table was created to support time-based analysis.
 
-Step 6
+Used for:
 
-Designed interactive dashboards.
+- Year
+- Month
+- Month Name
+- Revenue Trend
+- Time Intelligence
 
-KPIs Created
-Total Revenue
-Total Orders
-Average Order Value
-Cancellation Rate
-Refund Rate
-Coupon Usage %
-Coupon Avg Spend
-No Coupon Avg Spend
-Revenue Lost
-Churn Rate
-Churn Customers
-Remaining Customers
-Remaining Revenue
-Total Restaurants
-Dashboards
-1 Executive Dashboard
+---
 
-Shows
+## Step 5: DAX Measures
 
-Revenue
-Orders
-AOV
-Payment Mode
-Revenue by City
-Revenue by Restaurant
-Order Status
-2 Customer Analysis
+Several DAX measures were created to calculate KPIs and business metrics.
 
-Shows
+Revenue KPIs
 
-Total Customers
-New Customers
-Repeat Customers
-Revenue by Customer
-Customer Segmentation
-3 Restaurant Performance
+- Total Revenue
+- Average Order Value
+- Monthly Revenue
+- Revenue by City
+- Revenue by Payment Mode
 
-Shows
+Customer KPIs
 
-Top Restaurants
-Bottom Restaurants
-Cuisine Analysis
-Restaurant Rating vs Revenue
-4 Coupon Analysis
+- Total Customers
+- Repeat Customers
+- Top Customers Revenue
+- Customer Revenue %
+- Acquisition Channel Performance
 
-Shows
+Restaurant KPIs
 
-Coupon Usage %
-Coupon Spend
-City-wise Coupon Usage
-Repeat Coupon Customers
-5 Cancellation & Refund Analysis
+- Total Restaurants
+- Restaurant Revenue
+- Popular Cuisine
+- Restaurant Orders
 
-Shows
+Coupon KPIs
 
-Cancellation Rate
-Refund Rate
-Revenue Lost
-Restaurants with Highest Cancellation
-6 Customer Churn Analysis
+- Coupon Usage %
+- Coupon Orders
+- Coupon Average Spend
+- Non-Coupon Average Spend
+- Repeat Coupon Customers
 
-Shows
+Cancellation KPIs
 
-Churn Customers
-Churn Rate
-Highest Churn City
-Revenue Lost Due to Churn
-High Value Churn Customers
-Business Questions Solved
-Revenue Analysis
-Total Revenue
-Monthly Revenue Trend
-Top Cities
-Best Restaurants
-Customer Analysis
-Repeat Customers
-Average Spend
-Customer Distribution
-Restaurant Analysis
-Top Restaurants
-Bottom Restaurants
-Cuisine Popularity
-Coupon Analysis
-Coupon Usage %
-Coupon Spending
-Coupon Cities
-Repeat Coupon Users
-Cancellation Analysis
-Cancellation Rate
-Refund Rate
-Revenue Lost
-Highest Cancellation Restaurants
-Churn Analysis
-Churn Customers
-Churn Rate
-Highest Churn City
-Revenue Lost
-High Value Churn Customers
+- Cancellation Rate
+- Refund Rate
+- Revenue Lost
+- Cancelled Orders
+
+Customer Churn KPIs
+
+- Churned Customers
+- Churn Rate
+- Revenue Lost Due to Churn
+- High Value Churn Customers
+
+---
+
+# Dashboard Pages
+
+## 1. Executive Dashboard
+
+Purpose
+
+Provide a complete business overview for management.
+
+Visuals Used
+
+- KPI Cards
+- Line Chart
+- Donut Charts
+- Bar Charts
+- Table
+- Slicers
+
+KPIs
+
+- Total Revenue
+- Total Orders
+- Average Order Value
+- Cancellation Rate
+- Refund Rate
+- Total Customers
+
+---
+
+## 2. Customer Analysis Dashboard
+
+Business Questions
+
+- Top customers
+- Repeat customers
+- Revenue contribution
+- Acquisition channel performance
+
+Visuals Used
+
+- Cards
+- Bar Charts
+- Donut Chart
+- Table
+
+---
+
+## 3. Restaurant Performance Dashboard
+
+Business Questions
+
+- Highest revenue restaurants
+- Most ordered restaurants
+- Popular cuisines
+- Bottom performing restaurants
+
+Visuals Used
+
+- Horizontal Bar Charts
+- Column Charts
+- KPI Cards
+- Tables
+
+---
+
+## 4. Coupon Analysis Dashboard
+
+Business Questions
+
+- Coupon Usage %
+- Coupon vs Non-Coupon Spend
+- City-wise Coupon Usage
+- Repeat Coupon Customers
+
+Visuals Used
+
+- KPI Cards
+- Clustered Column Chart
+- Horizontal Bar Chart
+
+---
+
+## 5. Cancellation & Refund Dashboard
+
+Business Questions
+
+- Cancellation Rate
+- Refund Rate
+- Revenue Lost
+- Restaurants with Highest Cancellations
+
+Visuals Used
+
+- KPI Cards
+- Horizontal Bar Chart
+
+---
+
+## 6. Customer Churn Dashboard
+
+Business Questions
+
+- Churned Customers
+- Churn Rate
+- Highest Churn City
+- Revenue Lost Due to Churn
+- High Value Churn Customers
+
+Visuals Used
+
+- KPI Cards
+- Horizontal Bar Chart
+- Table
+
+---
+
+# Power BI Features
+
+- Interactive Dashboard
+- Cross Filtering
+- Drill Down
+- KPI Monitoring
+- Business Intelligence Reporting
+- Data Modeling
+- DAX Calculations
+- Slicers
+- Dynamic Filtering
+- Executive Reporting
+
+---
+
+# DAX Concepts Used
+
+- SUM()
+- COUNT()
+- COUNTROWS()
+- DISTINCTCOUNT()
+- CALCULATE()
+- FILTER()
+- DIVIDE()
+- IF()
+- VAR
+- RETURN
+- MAX()
+- TODAY()
+- DATEDIFF()
+
+---
+
+# Power BI Skills Demonstrated
+
+- Data Import
+- Data Modeling
+- Relationship Management
+- Power Query
+- DAX
+- KPI Development
+- Dashboard Design
+- Business Analytics
+- Interactive Reporting
+- Data Visualization
+
+---
+
+# Tools Used
+
+- MySQL
+- MySQL Workbench
+- Microsoft Power BI
+- Power Query
+- DAX
+- Git
+- GitHub
+
+---
+
+# Business Outcome
+
+The Power BI dashboards transformed raw SQL outputs into interactive business reports that help stakeholders monitor revenue, customer behavior, restaurant performance, coupon effectiveness, cancellations, refunds, and customer churn in real time.
+
+This project demonstrates an end-to-end Business Intelligence workflow, starting from SQL data extraction and cleaning to interactive dashboard development in Power BI, making it suitable for real-world analytics and portfolio presentation.
