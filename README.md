@@ -413,4 +413,201 @@ aggregate-functions
 data-cleaning
 business-analysis
 github-project
-```
+
+
+
+
+Zomato Business Analytics Project (SQL + Power BI)
+📌 Project Overview
+
+This project analyzes Zomato food delivery data using MySQL and Power BI.
+
+The objective is to transform raw transactional data into meaningful business insights by answering real-world business questions related to:
+
+Revenue
+Customers
+Restaurants
+Coupons
+Cancellations
+Refunds
+Customer Churn
+🛠 Tools Used
+MySQL Workbench
+Power BI Desktop
+SQL
+DAX
+Power Query
+Dataset
+
+Three datasets were used.
+
+Customers
+
+Contains customer details.
+
+Orders
+
+Contains all order transactions.
+
+Restaurants
+
+Contains restaurant information.
+
+Database Design
+
+Three tables were connected.
+
+Customers
+     │
+customer_id
+     │
+Orders
+     │
+restaurant_id
+     │
+Restaurants
+
+Relationships were created inside Power BI.
+
+SQL Work
+
+The SQL phase included
+
+Database creation
+Table creation
+Importing CSV files
+Data cleaning
+Business SQL queries
+Revenue Analysis
+Customer Analysis
+Restaurant Analysis
+Coupon Analysis
+Cancellation Analysis
+Churn Analysis
+Power BI Process
+
+The project followed these steps.
+
+Step 1
+
+Connected Power BI with MySQL.
+
+Step 2
+
+Loaded all tables.
+
+Step 3
+
+Created relationships.
+
+Step 4
+
+Performed data cleaning using Power Query.
+
+Step 5
+
+Created calculated measures using DAX.
+
+Step 6
+
+Designed interactive dashboards.
+
+KPIs Created
+Total Revenue
+Total Orders
+Average Order Value
+Cancellation Rate
+Refund Rate
+Coupon Usage %
+Coupon Avg Spend
+No Coupon Avg Spend
+Revenue Lost
+Churn Rate
+Churn Customers
+Remaining Customers
+Remaining Revenue
+Total Restaurants
+Dashboards
+1 Executive Dashboard
+
+Shows
+
+Revenue
+Orders
+AOV
+Payment Mode
+Revenue by City
+Revenue by Restaurant
+Order Status
+2 Customer Analysis
+
+Shows
+
+Total Customers
+New Customers
+Repeat Customers
+Revenue by Customer
+Customer Segmentation
+3 Restaurant Performance
+
+Shows
+
+Top Restaurants
+Bottom Restaurants
+Cuisine Analysis
+Restaurant Rating vs Revenue
+4 Coupon Analysis
+
+Shows
+
+Coupon Usage %
+Coupon Spend
+City-wise Coupon Usage
+Repeat Coupon Customers
+5 Cancellation & Refund Analysis
+
+Shows
+
+Cancellation Rate
+Refund Rate
+Revenue Lost
+Restaurants with Highest Cancellation
+6 Customer Churn Analysis
+
+Shows
+
+Churn Customers
+Churn Rate
+Highest Churn City
+Revenue Lost Due to Churn
+High Value Churn Customers
+Business Questions Solved
+Revenue Analysis
+Total Revenue
+Monthly Revenue Trend
+Top Cities
+Best Restaurants
+Customer Analysis
+Repeat Customers
+Average Spend
+Customer Distribution
+Restaurant Analysis
+Top Restaurants
+Bottom Restaurants
+Cuisine Popularity
+Coupon Analysis
+Coupon Usage %
+Coupon Spending
+Coupon Cities
+Repeat Coupon Users
+Cancellation Analysis
+Cancellation Rate
+Refund Rate
+Revenue Lost
+Highest Cancellation Restaurants
+Churn Analysis
+Churn Customers
+Churn Rate
+Highest Churn City
+Revenue Lost
+High Value Churn Customers
