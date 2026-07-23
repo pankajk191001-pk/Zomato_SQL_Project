@@ -389,30 +389,8 @@ This project can be enhanced by implementing:
 
 An end-to-end SQL analytics project that investigates Zomato's customer, restaurant, and order data to solve real business problems. The project includes data cleaning, data quality assessment, revenue analysis, customer analytics, restaurant performance evaluation, coupon analysis, cancellation & refund analysis, customer churn analysis, and KPI reporting using MySQL. The insights generated through this project help support strategic decision-making and business growth.
 
----
 
-# Topics
 
-text
-sql
-mysql
-mysql-workbench
-data-analysis
-business-intelligence
-customer-analytics
-restaurant-analytics
-sales-analysis
-revenue-analysis
-kpi-reporting
-coupon-analysis
-cancellation-analysis
-refund-analysis
-customer-churn
-joins
-aggregate-functions
-data-cleaning
-business-analysis
-github-project
 ---
 
 # Power BI Dashboard
